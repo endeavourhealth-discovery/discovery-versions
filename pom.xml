@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.endeavourhealth</groupId>
+  <artifactId>discovery-versions</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <junit.version>4.12</junit.version>
+
+    <endeavour-api.version>1.34-SNAPSHOT</endeavour-api.version>
+    <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
+    <endeavour-config.version>1.26-SNAPSHOT</endeavour-config.version>
+    <endeavour-core.version>1.345-SNAPSHOT</endeavour-core.version>
+    <endeavour-fhir.version>1.88-SNAPSHOT</endeavour-fhir.version>
+    <endeavour-security.version>1.15-SNAPSHOT</endeavour-security.version>
+    <endeavour-transforms.version>1.1331-SNAPSHOT</endeavour-transforms.version>
+    <endeavour-utility.version>1.45-SNAPSHOT</endeavour-utility.version>
+
+    <dashboard-information.version>1.1-SNAPSHOT</dashboard-information.version>
+    <data-sharing-models.version>0.0.12-SNAPSHOT</data-sharing-models.version>
+    <information-model.version>1.4-SNAPSHOT</information-model.version>
+    <user-models.version>0.0.19-SNAPSHOT</user-models.version>
+
+    <amqp-client.version>3.6.2</amqp-client.version>
+    <aspectj-metrics.version>1.2.0</aspectj-metrics.version>
+    <aspectj.version>1.8.9</aspectj.version>
+    <aws-sdk.version>1.11.247</aws-sdk.version>
+    <commons-codec.version>1.10</commons-codec.version>
+    <commons-collections4.version>4.0</commons-collections4.version>
+    <commons-csv.version>1.3</commons-csv.version>
+    <commons-fileupload.version>1.3.3</commons-fileupload.version>
+    <commons-io.version>1.3.2</commons-io.version>
+    <commons-lang3.version>3.4</commons-lang3.version>
+    <commons-logging.version>1.2</commons-logging.version>
+    <crypto-lib.version>0.9.7</crypto-lib.version>
+    <dropwizard-metrics.version>4.0.2</dropwizard-metrics.version>
+    <fhir-dstu2.version>1.0.1.7108</fhir-dstu2.version>
+    <gson.version>2.6.2</gson.version>
+    <guava.version>19.0</guava.version>
+    <hapi.version>2.2</hapi.version>
+    <hibernate.version>5.2.12.Final</hibernate.version>
+    <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
+    <hikari.version>2.7.1</hikari.version>
+    <httpclient.version>4.5.2</httpclient.version>
+    <httpcore.version>4.4.4</httpcore.version>
+    <jackson.version>2.9.8</jackson.version>
+    <javax.annotation-api.version>1.2</javax.annotation-api.version>
+    <javax.mail.version>1.5.5</javax.mail.version>
+    <javax-servlet.version>2.5</javax-servlet.version>
+    <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
+    <jboss-logging.version>3.3.2.Final</jboss-logging.version>
+    <jcs.version>1.3</jcs.version>
+    <jersey.version>2.25.1</jersey.version>
+    <joda.version>2.9.1</joda.version>
+    <jtds.version>1.3.1</jtds.version>
+    <keycloak.version>4.8.3.Final</keycloak.version>
+    <logback.version>1.1.3</logback.version>
+    <mysql.version>8.0.12</mysql.version>
+    <postgresql.version>9.4.1212.jre7</postgresql.version>
+    <slack-integration.version>1.2.1</slack-integration.version>
+    <slf4j.version>1.7.21</slf4j.version>
+    <swagger.version>1.5.22</swagger.version>
+    <xpp.version>1.1.4c</xpp.version>
+
+    <!--PLACEHOLDERS - NOT CURRENTLY IMPLEMENTED BELOW-->
+    <!--<resteasy.version>3.0.14.Final</resteasy.version>-->
+
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!--Endeavour Common-->
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>api</artifactId>
+        <version>${endeavour-api.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>cache</artifactId>
+        <version>${endeavour-cache.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.configmanager</groupId>
+        <artifactId>configmanager</artifactId>
+        <version>${endeavour-config.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>core</artifactId>
+        <version>${endeavour-core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>fhir</artifactId>
+        <version>${endeavour-fhir.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>security</artifactId>
+        <version>${endeavour-security.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>transforms</artifactId>
+        <version>${endeavour-transforms.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.common</groupId>
+        <artifactId>utility</artifactId>
+        <version>${endeavour-utility.version}</version>
+      </dependency>
+
+      <!--Endeavour applications-->
+      <dependency>
+        <groupId>org.endeavourhealth.discoveryDashboard</groupId>
+        <artifactId>DashboardInformation</artifactId>
+        <version>${dashboard-information.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.dataSharingManager</groupId>
+        <artifactId>Models</artifactId>
+        <version>${data-sharing-models.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.im</groupId>
+        <artifactId>client</artifactId>
+        <version>${information-model.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.endeavourhealth.userManager</groupId>
+        <artifactId>UserModels</artifactId>
+        <version>${user-models.version}</version>
+      </dependency>
+
+      <!--Build-->
+      <dependency>
+        <groupId>com.rabbitmq</groupId>
+        <artifactId>amqp-client</artifactId>
+        <version>${amqp-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.astefanutti.metrics.aspectj</groupId>
+        <artifactId>metrics-aspectj</artifactId>
+        <version>${aspectj-metrics.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${aspectj.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk</artifactId>
+        <version>${aws-sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-s3</artifactId>
+        <version>${aws-sdk.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-core</artifactId>
+        <version>${aws-sdk.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collections4.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-csv</artifactId>
+        <version>${commons-csv.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>${commons-fileupload.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${commons-logging.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.openpseudonymiser</groupId>
+        <artifactId>cryptolib</artifactId>
+        <version>${crypto-lib.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-core</artifactId>
+        <version>${dropwizard-metrics.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-servlets</artifactId>
+        <version>${dropwizard-metrics.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-servlet</artifactId>
+        <version>${dropwizard-metrics.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-annotation</artifactId>
+        <version>${dropwizard-metrics.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.dropwizard.metrics</groupId>
+        <artifactId>metrics-jvm</artifactId>
+        <version>${dropwizard-metrics.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>me.fhir</groupId>
+        <artifactId>fhir-dstu2</artifactId>
+        <version>${fhir-dstu2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>${gson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-base</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v22</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v23</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v231</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v24</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v25</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v251</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ca.uhn.hapi</groupId>
+        <artifactId>hapi-structures-v26</artifactId>
+        <version>${hapi.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-hikaricp</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>${hibernate.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.1-api</artifactId>
+        <version>${hibernate-jpa.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>${hikari.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${httpclient.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>${httpcore.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>javax.annotation-api</artifactId>
+        <version>${javax.annotation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>javax.mail-api</artifactId>
+        <version>${javax.mail.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${javax.mail.version}</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>${javax-servlet.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>${javax.ws.rs-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging</artifactId>
+        <version>${jboss-logging.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.jcs</groupId>
+        <artifactId>jcs</artifactId>
+        <version>${jcs.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.glassfish.jersey.core</groupId>
+        <artifactId>jersey-client</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jersey.core</groupId>
+        <artifactId>jersey-common</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-servlet</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jersey.media</groupId>
+        <artifactId>jersey-media-json-jackson</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.jersey.core</groupId>
+        <artifactId>jersey-server</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>joda-time</groupId>
+        <artifactId>joda-time</artifactId>
+        <version>${joda.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>net.sourceforge.jtds</groupId>
+        <artifactId>jtds</artifactId>
+        <version>${jtds.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-admin-client</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-authz-client</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-core</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-adapter-core</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-adapter-spi</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-common</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-tomcat8-adapter</artifactId>
+        <version>${keycloak.version}</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>net.gpedro.integrations.slack</groupId>
+        <artifactId>slack-webhook</artifactId>
+        <version>${slack-integration.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-annotations</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.swagger</groupId>
+        <artifactId>swagger-jersey2-jaxrs</artifactId>
+        <version>${swagger.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>xpp3</groupId>
+        <artifactId>xpp3</artifactId>
+        <version>${xpp.version}</version>
+      </dependency>
+      <!--Test-->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>maven.endeavourhealth.org-snapshots</name>
+      <url>http://maven.endeavourhealth.net:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
