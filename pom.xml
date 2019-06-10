@@ -27,7 +27,7 @@
     <datagenerator-scheduler.version>1.0-SNAPSHOT</datagenerator-scheduler.version>
 
     <amqp-client.version>3.6.2</amqp-client.version>
-    <asptj-metrics.version>1.2.0</asptj-metrics.version>
+    <aspectj-metrics.version>1.2.0</aspectj-metrics.version>
     <aspectj.version>1.8.9</aspectj.version>
     <aws-sdk.version>1.11.247</aws-sdk.version>
     <commons-codec.version>1.10</commons-codec.version>
