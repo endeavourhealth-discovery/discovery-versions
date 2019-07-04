@@ -22,7 +22,7 @@
 
     <dashboard-information.version>1.1-SNAPSHOT</dashboard-information.version>
     <data-sharing-models.version>0.0.12-SNAPSHOT</data-sharing-models.version>
-    <information-model.version>1.7-SNAPSHOT</information-model.version>
+    <information-model.version>1.8-SNAPSHOT</information-model.version>
     <user-models.version>0.0.19-SNAPSHOT</user-models.version>
     <datagenerator-scheduler.version>1.0-SNAPSHOT</datagenerator-scheduler.version>
 
