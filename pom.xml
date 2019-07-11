@@ -26,7 +26,7 @@
     <user-models.version>0.0.19-SNAPSHOT</user-models.version>
     <datagenerator-scheduler.version>1.0-SNAPSHOT</datagenerator-scheduler.version>
 
-    <amqp-client.version>4.8.0</amqp-client.version>
+    <amqp-client.version>3.6.2</amqp-client.version>
     <aspectj-metrics.version>1.2.0</aspectj-metrics.version>
     <aspectj.version>1.8.9</aspectj.version>
     <aws-sdk.version>1.11.247</aws-sdk.version>
@@ -49,7 +49,7 @@
     <hikari.version>2.7.1</hikari.version>
     <httpclient.version>4.5.2</httpclient.version>
     <httpcore.version>4.4.4</httpcore.version>
-    <jackson.version>2.9.9</jackson.version>
+    <jackson.version>2.9.8</jackson.version>
     <javax.annotation-api.version>1.2</javax.annotation-api.version>
     <javax.mail.version>1.5.5</javax.mail.version>
     <javax-servlet.version>2.5</javax-servlet.version>
