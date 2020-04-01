@@ -19,7 +19,7 @@
     <endeavour-security.version>1.80-SNAPSHOT</endeavour-security.version>
     <endeavour-transforms.version>1.1963-SNAPSHOT</endeavour-transforms.version>
     <endeavour-utility.version>1.66-SNAPSHOT</endeavour-utility.version>
-    <endeavour-uiaudittrail.version>1.13-SNAPSHOT</endeavour-uiaudittrail.version>
+    <endeavour-uiaudittrail.version>1.14-SNAPSHOT</endeavour-uiaudittrail.version>
 
     <dashboard-information.version>1.1-SNAPSHOT</dashboard-information.version>
     <data-sharing-models.version>0.0.12-SNAPSHOT</data-sharing-models.version>
