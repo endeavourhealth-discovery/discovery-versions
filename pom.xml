@@ -71,6 +71,7 @@
     <slf4j.version>1.7.25</slf4j.version>
     <swagger.version>1.5.22</swagger.version>
     <xpp.version>1.1.4c</xpp.version>
+    <jul-to-slf4j.version>1.7.30</jul-to-slf4j.version>
 
     <!--PLACEHOLDERS - NOT CURRENTLY IMPLEMENTED BELOW-->
     <!--<resteasy.version>3.0.14.Final</resteasy.version>-->
@@ -599,12 +600,17 @@
         <artifactId>swagger-jaxrs</artifactId>
         <version>${swagger.version}</version>
       </dependency>
-
       <dependency>
         <groupId>xpp3</groupId>
         <artifactId>xpp3</artifactId>
         <version>${xpp.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jul-to-slf4j</artifactId>
+        <version>${jul-to-slf4j.version}</version>
+      </dependency>
+
       <!--Test-->
       <dependency>
         <groupId>junit</groupId>
@@ -612,6 +618,8 @@
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+
+
     </dependencies>
   </dependencyManagement>
 
