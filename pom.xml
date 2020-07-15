@@ -11,7 +11,7 @@
   <properties>
     <junit.version>4.12</junit.version>
 
-    <endeavour-api.version>1.45-SNAPSHOT</endeavour-api.version>
+    <endeavour-api.version>1.46-SNAPSHOT</endeavour-api.version>
     <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
     <endeavour-config.version>1.32-SNAPSHOT</endeavour-config.version>
     <endeavour-core.version>1.705-SNAPSHOT</endeavour-core.version>
