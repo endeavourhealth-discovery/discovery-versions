@@ -11,14 +11,14 @@
   <properties>
     <junit.version>4.12</junit.version>
 
-    <endeavour-api.version>1.46-SNAPSHOT</endeavour-api.version>
+    <endeavour-api.version>1.55-SNAPSHOT</endeavour-api.version>
     <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
     <endeavour-config.version>1.32-SNAPSHOT</endeavour-config.version>
-    <endeavour-core.version>1.707-SNAPSHOT</endeavour-core.version>
-    <endeavour-fhir.version>1.143-SNAPSHOT</endeavour-fhir.version>
+    <endeavour-core.version>1.717-SNAPSHOT</endeavour-core.version>
+    <endeavour-fhir.version>1.148-SNAPSHOT</endeavour-fhir.version>
     <endeavour-security.version>1.80-SNAPSHOT</endeavour-security.version>
-    <endeavour-transforms.version>1.2131-SNAPSHOT</endeavour-transforms.version>
-    <endeavour-utility.version>1.69-SNAPSHOT</endeavour-utility.version>
+    <endeavour-transforms.version>1.2159-SNAPSHOT</endeavour-transforms.version>
+    <endeavour-utility.version>1.72-SNAPSHOT</endeavour-utility.version>
     <endeavour-uiaudittrail.version>1.16-SNAPSHOT</endeavour-uiaudittrail.version>
 
     <dashboard-information.version>1.1-SNAPSHOT</dashboard-information.version>
