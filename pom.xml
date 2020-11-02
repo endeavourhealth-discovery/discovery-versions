@@ -11,19 +11,19 @@
   <properties>
     <junit.version>4.12</junit.version>
 
-    <endeavour-api.version>1.57-SNAPSHOT</endeavour-api.version>
+    <endeavour-api.version>1.58-SNAPSHOT</endeavour-api.version>
     <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
     <endeavour-config.version>1.32-SNAPSHOT</endeavour-config.version>
-    <endeavour-core.version>1.717-SNAPSHOT</endeavour-core.version>
-    <endeavour-fhir.version>1.148-SNAPSHOT</endeavour-fhir.version>
-    <endeavour-security.version>1.80-SNAPSHOT</endeavour-security.version>
-    <endeavour-transforms.version>1.2174-SNAPSHOT</endeavour-transforms.version>
-    <endeavour-utility.version>1.75-SNAPSHOT</endeavour-utility.version>
+    <endeavour-core.version>1.733-SNAPSHOT</endeavour-core.version>
+    <endeavour-fhir.version>1.150-SNAPSHOT</endeavour-fhir.version>
+    <endeavour-security.version>1.81-SNAPSHOT</endeavour-security.version>
+    <endeavour-transforms.version>1.2230-SNAPSHOT</endeavour-transforms.version>
+    <endeavour-utility.version>1.73-SNAPSHOT</endeavour-utility.version>
     <endeavour-uiaudittrail.version>1.16-SNAPSHOT</endeavour-uiaudittrail.version>
 
     <dashboard-information.version>1.1-SNAPSHOT</dashboard-information.version>
     <data-sharing-models.version>0.0.12-SNAPSHOT</data-sharing-models.version>
-    <information-model.version>1.21-SNAPSHOT</information-model.version>
+    <information-model.version>1.22-SNAPSHOT</information-model.version>
     <user-models.version>0.0.19-SNAPSHOT</user-models.version>
     <datagenerator-scheduler.version>1.0-SNAPSHOT</datagenerator-scheduler.version>
 
@@ -52,7 +52,7 @@
     <httpcore.version>4.4.4</httpcore.version>
     <jackson.version>2.9.8</jackson.version>
     <javax.annotation-api.version>1.2</javax.annotation-api.version>
-    <javax.mail.version>1.5.5</javax.mail.version>
+    <javax.mail.version>1.6.2</javax.mail.version>
     <javax-servlet.version>2.5</javax-servlet.version>
     <javax.ws.rs-api.version>2.0.1</javax.ws.rs-api.version>
     <jboss-logging.version>3.3.2.Final</jboss-logging.version>
@@ -419,16 +419,10 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>javax.mail-api</artifactId>
-        <version>${javax.mail.version}</version>
-      </dependency>
-      <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${javax.mail.version}</version>
       </dependency>
-
 
       <dependency>
         <groupId>javax.servlet</groupId>
