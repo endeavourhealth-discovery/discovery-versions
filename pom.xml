@@ -17,7 +17,7 @@
     <endeavour-core.version>1.750-SNAPSHOT</endeavour-core.version>
     <endeavour-fhir.version>1.152-SNAPSHOT</endeavour-fhir.version>
     <endeavour-security.version>1.81-SNAPSHOT</endeavour-security.version>
-    <endeavour-transforms.version>1.2297-SNAPSHOT</endeavour-transforms.version>
+    <endeavour-transforms.version>1.2298-SNAPSHOT</endeavour-transforms.version>
     <endeavour-utility.version>1.77-SNAPSHOT</endeavour-utility.version>
     <endeavour-uiaudittrail.version>1.16-SNAPSHOT</endeavour-uiaudittrail.version>
 
