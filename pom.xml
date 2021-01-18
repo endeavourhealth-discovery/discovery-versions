@@ -12,7 +12,7 @@
     <junit.version>4.12</junit.version>
     <endeavour-api.version>1.63-SNAPSHOT</endeavour-api.version>
     <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
-    <endeavour-config.version>1.32-SNAPSHOT</endeavour-config.version>
+    <endeavour-config.version>1.33-SNAPSHOT</endeavour-config.version>
     <endeavour-core.version>1.751-SNAPSHOT</endeavour-core.version>
     <endeavour-fhir.version>1.154-SNAPSHOT</endeavour-fhir.version>
     <endeavour-security.version>1.81-SNAPSHOT</endeavour-security.version>
