@@ -10,7 +10,7 @@
 
   <properties>
     <junit.version>4.12</junit.version>
-    <endeavour-api.version>1.64-SNAPSHOT</endeavour-api.version>
+    <endeavour-api.version>1.65-SNAPSHOT</endeavour-api.version>
     <endeavour-cache.version>1.5-SNAPSHOT</endeavour-cache.version>
     <endeavour-config.version>1.33-SNAPSHOT</endeavour-config.version>
     <endeavour-core.version>1.756-SNAPSHOT</endeavour-core.version>
